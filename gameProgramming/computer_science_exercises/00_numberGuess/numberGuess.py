@@ -40,6 +40,22 @@ print("""
 
 # GAME LOOP
 print("You need to guess a number from 0 to 30 and you have four gusses.\nIf you guess it right, you get a point.\nIf you can't guess it in four guesses, the CPU gets a point\n")
+print("Easy max range 20 num attempts 5, Normal max range 25 num attempts 4, Hard max range 30 num attempts 3.")
+difficult = input("Choose difficult\n")
+if difficult == "easy":
+    rangeMin = 0
+    rangeMax = 20
+    numAttempts = 5
+elif difficult == "normal":
+    rangeMin = 0
+    rangeMax = 25
+    numAttempts = 4
+elif difficult == "hard":
+    rangeMin = 0
+    rangeMax = 30
+    numAttempts = 3
+else:
+    print("Wrong! Try again.")
 # ADD CODE HERE TO CHANGE DIFFICULTY BETWEEN EACH MATCH.
 # print() an explanation of your three difficulty levels.
 # Use imput() to store difficulty in difficulty variable.
@@ -52,9 +68,9 @@ while playerScore != 3 and cpuScore != 3:
     #print(secretNumber)
     # ADD CODE HERE TO CHANGE DIFFICULTY BETWEEN EACH ROUND.
     numGuesses = 0
-    for guessed in range(4):
-        print(f"You have {4- numGuesses} guesses remaining.\n")
-        playerGuess = int(input("Type a number from 0 to 30 and push ENTER.\n"))
+    for guessed in range(numAttempts):
+        print(f"You have {numAttempts - numGuesses} guesses remaining.\n")
+        playerGuess = int(input(f"Type a number from {rangeMin} to {rangeMax} and push ENTER.\n"))
         # input() saves all data as a STRING by default. 
         # int() will convert to a INTEGER
         # float() will convert to a FLOAT
