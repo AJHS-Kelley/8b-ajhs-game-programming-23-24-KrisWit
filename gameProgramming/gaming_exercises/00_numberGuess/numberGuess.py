@@ -42,6 +42,8 @@ print("""
 print("You need to guess a number from 0 to 30 and you have four gusses.\nIf you guess it right, you get a point.\nIf you can't guess it in four guesses, the CPU gets a point\n")
 print("Easy max range 20 num attempts 5, Normal max range 25 num attempts 4, Hard max range 30 num attempts 3.")
 difficult = input("Choose difficult\n")
+# In your instructions, you typed Easy \ Normal \ Hard but the code you check for easy \ normal \ hard.
+# Your code should match your instructions! 
 if difficult == "easy":
     rangeMin = 0
     rangeMax = 20
@@ -55,6 +57,8 @@ elif difficult == "hard":
     rangeMax = 30
     numAttempts = 3
 else:
+    # Add 'default values' for rangeMin, rangeMax, and numAttempts if player does not select difficulty correctly.
+    # Without them, your code loops infinitely when difficulty is not typed correctly. 
     print("Wrong! Try again.")
 # ADD CODE HERE TO CHANGE DIFFICULTY BETWEEN EACH MATCH.
 # print() an explanation of your three difficulty levels.
