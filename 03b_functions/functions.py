@@ -1,3 +1,4 @@
+import random
 # FUNCTION -- a named piece of code that can be reused easily.
 # FUNCTION SIGNATURE -- Syntax for creating a new function
 def exampleFunctionA(): # NO PARAMETERS
@@ -15,5 +16,15 @@ def exampleFunctionB(num, count): # PARAMETERS
 # IF A FUNCTION REQUIRES PARAMETERS, YOUR CODE WILL CRASH WITHOUT THEM!
 
 # RUNNING A FUNCTION IS KNOW AS CALLING THE FUNCTION
-exampleFunctionA()
-exampleFunctionB(5, 0)
+# exampleFunctionA()
+# exampleFunctionB(5, 0)
+
+def rollDice(numDice, sizeDice):
+    numRolled = 0
+    while numRolled < numDice:
+        roll = random.randint(1, sizeDice)
+        print(f"Roll: {roll}\n")
+        numRolled += 1
+
+rollDice(4, 8)
+rollDice(1, 90)
