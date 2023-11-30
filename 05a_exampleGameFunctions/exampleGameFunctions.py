@@ -39,3 +39,6 @@ user_score = 0
 computer_score = 0
 
 play_game()
+
+
+# Code Review by Gabriel Coffey
