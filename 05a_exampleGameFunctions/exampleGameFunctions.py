@@ -42,3 +42,13 @@ play_game()
 
 
 # Code Review by Gabriel Coffey
+
+# Line 32 to 36: You always play again even if you decline.
+
+# The code below was an attempted fix(It dosen't work)
+
+#play_again = input("Do you want to play again? (yes/no):\n").lower()
+    #if play_again == 'yes' or "y":
+   #     play_game()
+   # elif play_again == 'no' or "n":
+   #      print("Thanks for playing!")
