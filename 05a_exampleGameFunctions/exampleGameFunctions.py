@@ -28,14 +28,15 @@ def play_game():
         computer_score += 1
 
     print("Score: You", user_score, "- Computer", computer_score)    
-
-    play_again = input("Do you want to play again? (yes/no):\n").lower()
-    if play_again == 'yes' or play_again == "y":
-        play_game()
-    else:
-        print("Thanks for playing!")
-# Initialize scores
 user_score = 0
 computer_score = 0
 
-play_game()
+while True:
+    play_game()
+
+    play_again = input("Do you want to play again? (yes/no):\n").lower()
+    if play_again != 'yes':
+        break
+
+print("Thanks for playing!")
+print('Final score: You', user_score, "-Computer", computer_score)
