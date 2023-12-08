@@ -30,7 +30,7 @@ def play_game():
     print("Score: You", user_score, "- Computer", computer_score)    
 
     play_again = input("Do you want to play again? (yes/no):\n").lower()
-    if play_again == 'yes' or "y":
+    if play_again == 'yes' or play_again == "y":
         play_game()
     else:
         print("Thanks for playing!")
