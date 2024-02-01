@@ -1,21 +1,22 @@
 #Creating Window by Kristopher Cooper, v0.0
 import pygame
+from sys import exit
 
 pygame.init()
 screen = pygame.display.set_mode((800,400))
 pygame.display.set_caption('Maze Runner')
 clock = pygame.time.Clock()
 
-test_surface = pygame.Surface((100,200))
-test_surface.fill('ghostwhite')
+sky_surface = pygame.image.load('img/sky.jpg')
+ground_surface = pygame.image.load('img/ground.jpg')
 
 while True:
     for event in pygame.event.get():
         if  event.type == pygame.QUIT:
             pygame.quit()
-            exit()
-    # draw all our elements
-    screen.blit(test_surface,(200,100))
+    
+    screen.blit(sky_surface,(0,0))
+    screen.blit(ground_surface,(0,200))
             
     pygame.display.update()
     clock.tick(60)
