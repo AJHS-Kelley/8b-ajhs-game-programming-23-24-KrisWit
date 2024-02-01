@@ -1,4 +1,4 @@
-#Creating Window by Kristopher Cooper, v0.0
+#Creating Window by Kristopher Cooper, v0.2
 import pygame
 from sys import exit
 
