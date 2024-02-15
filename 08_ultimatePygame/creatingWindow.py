@@ -1,6 +1,7 @@
 #Creating Window by Kristopher Cooper, v0.2
 import pygame
 from sys import exit
+# Kris you are incredibly far behind.  You will need to work on this outside of class to get done in time. 
 
 pygame.init()
 screen = pygame.display.set_mode((800,400))
