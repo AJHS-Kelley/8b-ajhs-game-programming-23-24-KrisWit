@@ -3,3 +3,25 @@ Theme:
 
 Win Condition(s):
 Loss Condition(s):
+
+Level / Screen:
+  --
+  --
+
+Objectives / Enemies / Obstacles:
+ --
+
+ Items / Equipment / Objects:
+  --
+  --
+
+Difficulty Changes:
+   --
+   --
+
+Controls:
+   --
+   --
+   --
+
+   
