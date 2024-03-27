@@ -1,1 +1,1 @@
-# Final Project by Kristopher Cooper
+# Final Project, Kristopher Cooper v0.0
