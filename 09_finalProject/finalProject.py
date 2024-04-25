@@ -2,6 +2,9 @@
 import pygame
 import random
 
+# Your code crashes upon running, please fix. 
+
+
 # Initialize Pygame
 pygame.init()
 
